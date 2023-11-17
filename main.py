@@ -104,15 +104,13 @@ with mp_holistic.Holistic(
                     # transform to original loc
                     for j in idx_to_coordinates:
                         # original x
-                        # print(x + idx_to_coordinates.get(j)[0])
+                        print(x + idx_to_coordinates.get(j)[0])
                         # original y
-                        # print(y + idx_to_coordinates.get(j)[0])
-                        print()
-
+                        print(y + idx_to_coordinates.get(j)[0])
+                        
                     # Because some points cannot be determined,
                     # the number of each point has a corresponding position
                     # cannot append to array.
-        print()
         cv2.imwrite("./gif/" + str(count) + ".jpg", final)
         count += 1
 
